@@ -1,45 +1,5 @@
 @import url(https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Playpen+Sans+Thai:wght@100..800&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Playpen+Sans+Thai:wght@100..800&display=swap);
-
-/* .img{
-    width: 100%;
-    height: 40%;
-    object-fit: cover;
-    display: block;
-    background-size: cover;
-} */
- /* .crop img{
-  width: 250px;
-  height: 250px;
-  object-fit: cover;
-  clip-path: circle(50% at 50% 50%);
-      display: block;
- }  */
-
-/* .imgone{
- position: absolute;
-    top: 10px;
-    left: 30px;
-    background-size: cover;
-} 
- .imgtwo{
-    position: absolute;
-    top: 200px;
-    left: 230px;
-    background-size: cover;
-}
-.imgthree{
-    position: absolute;
-    top: 10px;
-    right: 30px;
-    background-size: cover;
-}
-.imgfour{
-    position: absolute;
-    top: 200px;
-    right: 230px;
-    background-image: cover;
-} */
  /* Home */
 .container{
     margin: 0 auto;
@@ -47,21 +7,25 @@
 }
 body{
     margin: 0;
+    overflow-x: hidden;
 }
 .header-home{
-    height: 750px;
+    width: 100%;
+    height: 900px;
     background: url(resources/backgroud.jpg);
     background-size: cover;
-    @media screen and (max-width : 768px){
-        height: auto;
-        padding: 3rem 0;
+    background-repeat: no-repeat;
+    @media screen and (max-width : 430px){
+        height: 100vh;
+        width: 100vw;
+        padding: 1rem 0;
     }
     nav{
         display: flex;
          .container{
              margin: 0 auto;
              max-width: 1320px;
-            .nevwapper{
+            .nevwrapper{
                 flex-direction: column;
                 display: flex;
                 align-items: center;
@@ -121,108 +85,66 @@ body{
              }
     }
 
-    }
-
- /* body{
-    margin: 0%;
-    padding: 0%;
- }
-h2{
- position: absolute;
-    font-size: 20pt;
-    font-family:K2D ;
-    color: aliceblue;
 }
-h4{
-    position: absolute;
-    font-size: 15pt;
-    font-weight: 500;
-    font-family:Playpen Sans Thai;
-    color: aliceblue;
-}
-#cafe{
-    width: 400px;
-    height: 350px;
-     position: absolute;
-    top: 530px;
-    right: 20px;
-}
- video{
-   width: 250px;
-    height: 350px;
-    position: absolute;
-    top: 530px;
-    right: 450px;
- }
-
-.box{
-    width:700px;
-    height: 200px;
-    background-color: black;
-    border-radius: 30px;
-    position: absolute;
-    top: 530px;
-    left: 100px;
-    display: flex;             
-    flex-direction: column;   
-    justify-content: center;   
-    align-items: center;   
-}
-.box h4{
-    margin-top: 60px;
-    text-align: center;
-}
-.box h2{
-    margin-bottom: 110px;
-    
-} */
-/* .box2{
-    width:220px;
-    height: 100px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 30px;
-    position: absolute;
-    top: 900px;
-    left: 670px;
-    display: flex;             
-    flex-direction: column;  
-    justify-content: center;   
-    align-items: center;   
-    font-size: 35px;
-    font-family:K2D ;
-}
-.box3{
-    width:230px;
-    height: 115px;
-    background-color: rgb(0, 0, 0);
-    border-radius: 30px;
-    position: absolute;
-    top: 892px;
-    left: 665px;
-
-} */
- /* category1 */
-
-/* category2 */
-
- .header-category2{
+section{
+    background-color: rgb(43, 18, 5);
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
      @media screen and (max-width : 768px){
         height: auto;
-        width: auto;
         padding: 3rem 0;
+     }
+    .container{
+        .aboutwrapper{
+            background-color: aliceblue;
+            display: flex;
+            align-items: center;
+            
+            .aboutbox{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 2000px;
+                height: 500px;
+                @media screen and (max-width : 768px){
+                height: auto;
+                width: auto;
+                padding: 3rem 0;
+                  }
+                .video{
+                    video{
+                        width: 250px;
+                        height: 100%;
+                    }
+                }
+                .about{
+                    padding: 3rem;
+                    font-size : clamp( 1rem, 10vw, 20px);
+                    font-family:K2D ;
+                    h2{}
+                    h4{}
+                }
+            }
         }
+    }
+}
+
+ /* category1 */
+ .header-category1{
       .Bg{
-    height: 100vw;
+    height: 150%;
     width: 100vw;
     position: absolute;
     top:0;
     z-index: -1 ;
     background-repeat: no-repeat;
-    background: url(resources/backgroud2.jpg);
+    background: url(resources/backgroudbakery.jpg);
     background-size: cover;
       @media screen and (max-width : 768px){
         height: auto;
-        padding: 3rem 0;
+        padding: 3rem ;
         }
     
     }
@@ -230,7 +152,86 @@ h4{
         display: flex;
         margin-bottom: 100px;
         .container{
-            .nevwapper{
+            .nevwrapper{
+                flex-direction: column;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                position: absolute;
+                .menu{
+                    display: flex;
+                    list-style: none;
+                    font-size : clamp( 10px, 3vw, 20px);
+                    li {
+                        margin-left: 50px;
+                        margin-top: 20px;
+                        a {
+                            color: rgb(0, 0, 0);
+                            text-decoration: none;
+                        }
+
+                    }
+                    
+                }
+            }
+        }
+    }
+      .boxmenu{
+     display: flex;
+  justify-content: center; 
+  align-items: center;             
+  margin: 0;   
+  margin-bottom: 50px;         
+      .boxoutside{
+        width:225px;
+    height: 115px;
+    background-color: rgba(0, 0, 0, 0.959);
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+     display: flex;
+      margin: 0 ;
+        .boxinside{
+             width:213px;
+             height: 100px;
+             background-color: rgb(255, 255, 255);
+            border-radius: 30px; 
+            display: flex;
+             align-items: center;
+            justify-content: center;
+              text-align: center;
+
+                   h1{
+                      color: rgb(0, 0, 0);
+                       font-size: 70px;
+                      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                     }
+
+                     }
+                  }
+    
+            }
+            
+}
+
+/* category2 */
+
+ .header-category2{
+    .Bg{
+    height: 150%;
+    width: 100vw;
+    position: absolute;
+    top:0;
+    z-index: -1 ;
+    background-repeat: no-repeat;
+    background: url(resources/backgroud2.jpg);
+    }
+    nav{
+        display: flex;
+        margin-bottom: 100px;
+        .container{
+            .nevwrapper{
                 flex-direction: column;
                 display: flex;
                 align-items: center;
@@ -255,30 +256,31 @@ h4{
         }
     }
     .boxmenu{
-     display: flex;
-  justify-content: center; 
-  align-items: center;             
-  margin: 0;   
-  margin-bottom: 50px;         
+            display: flex;
+            justify-content: center; 
+            align-items: center;             
+            margin: 0;   
+            margin-bottom: 50px;         
       .boxoutside{
         width:225px;
-    height: 115px;
-    background-color: rgba(0, 0, 0, 0.959);
-    border-radius: 30px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-     display: flex;
-      margin: 0 ;
+        height: 115px;
+        background-color: rgba(0, 0, 0, 0.959);
+        border-radius: 30px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        margin: 0 ;
         .boxinside{
-             width:213px;
-             height: 100px;
-             background-color: rgb(255, 255, 255);
-            border-radius: 30px;
-             align-items: center;
-            justify-content: center;
-              text-align: center;
-             display: flex;
+                width:213px;
+                height: 100px;
+                background-color: rgb(255, 255, 255);  
+                border-radius: 30px; 
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+
                    h1{
                       color: rgb(0, 0, 0);
                        font-size: 70px;
@@ -292,13 +294,18 @@ h4{
             
  }
 
-
-
+table.bakery{
+    color: rgb(0, 0, 0);
+    width: 100%;
+    height: 200px;
+    position: absolute;
+}
 table{
     color: aliceblue;
     width: 100%;
     height: 200px;
     position: absolute;
+    
 }
 #th1{
     width: 250px;
@@ -307,7 +314,7 @@ table{
 }
 #th2{
      width: 200px;
-      height: 200;
+      height: auto;
        object-fit: cover;
 }
 #th3{
