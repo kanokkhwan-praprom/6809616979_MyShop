@@ -40,13 +40,16 @@
     right: 230px;
     background-image: cover;
 } */
+ /* Home */
 .container{
     margin: 0 auto;
-    padding: 0 ;
     max-width: 1320px;
 }
-header{
-    height: 800px;
+body{
+    margin: 0;
+}
+.header-home{
+    height: 750px;
     background: url(resources/backgroud.jpg);
     background-size: cover;
     @media screen and (max-width : 768px){
@@ -55,7 +58,9 @@ header{
     }
     nav{
         display: flex;
-        .container{
+         .container{
+             margin: 0 auto;
+             max-width: 1320px;
             .nevwapper{
                 flex-direction: column;
                 display: flex;
@@ -65,13 +70,12 @@ header{
                 
                 .menu{
                     display: flex;
-           
                     list-style: none;
                     font-size : clamp( 10px, 3vw, 20px);
 
                     li {
                         margin-left: 50px;
-                        margin-top: 20px;
+                        margin-top: 10px;
                         a {
                             color: antiquewhite;
                             text-decoration: none;
@@ -197,7 +201,60 @@ h4{
     left: 665px;
 
 } */
-.boxmenu{
+ /* category1 */
+
+/* category2 */
+
+ .header-category2{
+     @media screen and (max-width : 768px){
+        height: auto;
+        width: auto;
+        padding: 3rem 0;
+        }
+      .Bg{
+    height: 100vw;
+    width: 100vw;
+    position: absolute;
+    top:0;
+    z-index: -1 ;
+    background-repeat: no-repeat;
+    background: url(resources/backgroud2.jpg);
+    background-size: cover;
+      @media screen and (max-width : 768px){
+        height: auto;
+        padding: 3rem 0;
+        }
+    
+    }
+    nav{
+        display: flex;
+        margin-bottom: 100px;
+        .container{
+            .nevwapper{
+                flex-direction: column;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                position: absolute;
+                .menu{
+                    display: flex;
+                    list-style: none;
+                    font-size : clamp( 10px, 3vw, 20px);
+                    li {
+                        margin-left: 50px;
+                        margin-top: 20px;
+                        a {
+                            color: antiquewhite;
+                            text-decoration: none;
+                        }
+
+                    }
+                    
+                }
+            }
+        }
+    }
+    .boxmenu{
      display: flex;
   justify-content: center; 
   align-items: center;             
@@ -232,12 +289,16 @@ h4{
                   }
     
             }
+            
+ }
+
+
+
 table{
+    color: aliceblue;
     width: 100%;
     height: 200px;
     position: absolute;
-    /* top: 1000px;
-    padding: 50px; */
 }
 #th1{
     width: 250px;
